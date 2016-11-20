@@ -1,0 +1,32 @@
+/* Position fixed */
+html, body { /* stops bounce */
+    height: 100%;
+    overflow: hidden;
+}
+#container { /* stops bounce */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+/* fixed postition footer */
+#inner {
+    max-width: 1190px;
+    width:80%;
+    margin: 0 auto;
+}
+#box_footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f95b34;
+}
+
+
+
+
+
+
