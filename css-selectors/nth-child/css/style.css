@@ -1,0 +1,15 @@
+/* :nth-child Pseudo-classes------------------ */
+
+li:nth-child(2n+3) { /* odd, even, number */
+  background: #52bab3;
+  color: white;
+}
+
+/* an+b, 2n+3 means it starts at the 3rd position and 
+cycles every second after that */
+
+/* if a value is 1, omit. If b value is 0, omit. 
+IE; 1n+3, reduce to n+3 and 2n+0, reduce to 2n.
+If a and b are the same, 3n+3, reduce to 3n.*/
+
+/* -n+3, selects position 3 ans all items before */

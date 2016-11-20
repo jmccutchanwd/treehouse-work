@@ -1,0 +1,90 @@
+/* Attribute Selectors ------------- */
+
+.form-contact {
+  padding: 20px 24px;
+  background: #f4f7f8;
+}
+
+#container {
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type="email"] {
+  background-color:#fdfee6;
+}
+
+
+
+a[target="_blank"] {
+  color: #39abd1;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+/* DRY Classes ------------- */
+
+.br {
+  border-radius: .5em;
+}
+
+.avatar {
+  display: block;
+  margin: 0 auto 2em;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: .875em;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;  
+}
+
+.btn:hover {
+  opacity: .75;
+}
+
+.default {
+  background-color: #52bab3;
+}
+
+.error {
+  background-color: #ff784f;
+}
+
+/* Media Query ------------- */
+
+@media (min-width: 769px) {
+  .inln {
+    width: auto;
+    display: inline-block;
+  }
+ 
+  .btn + .btn { /* targets the second button (immediate sibling) */
+    margin-left: 20px;
+  }
+}
+
+/* Combinators ------------- */
+
+form > a { /* a very specific combinator (targets just the 'a' in 'form')*/
+    font-size: .7em;
+}
+
+h1 ~ label { /* targets all sibling label elements of the h1*/
+    background-color: tomato;
+    color: white;
+    padding: 5px;
+}
+
+
+
+
+

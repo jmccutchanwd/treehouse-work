@@ -1,0 +1,43 @@
+/* always targets the topmost element in the document */
+:root {
+  background: #e3effb;
+}
+
+/* selects an element when it is a target of a link */
+/* used to make button target an animation, also */
+:target {
+  background: #384047;
+  color: white;
+}
+
+#col-c:target {
+  background: #eff1f2;
+  color: initial;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+}
+
+/* target all elements specified, that do not have
+the element selected in parenthesis*/
+
+div:not(#col-a) {
+  border: solid 1px red;
+}
+
+input:not([type="submit"]) {
+  box-shadow: inset 0 2px 0 rgba(0, 0, 0, .15);
+  
+}
+
+/* a simple way to target the columns to the right of the first column for margin*/
+/* can specify :first-child or #col-a */
+.col:not(#col-a) {
+  margin-left: 15px;
+}
+
+/* example of multiple lines */
+/* second line targets nav buttons to the right of the first */
+
+.col:not(#col-a),
+nav a:not(:first-child) {
+  margin-left: 15px;
+}
