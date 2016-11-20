@@ -1,6 +1,6 @@
 #Treehouse Work
 
-![Treehouse]()
+![Treehouse](https://github.com/jmccutchanwd/treehouse-work/blob/master/images/Treehouse-logo.png)
 
 This is a repository of all the code I completed while working through Treehouse's Web developer Course.
 
