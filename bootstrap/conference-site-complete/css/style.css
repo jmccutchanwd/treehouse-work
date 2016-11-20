@@ -1,0 +1,36 @@
+
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, .8);
+  font-size: 1rem;
+  padding-top: .45rem;
+}
+
+.jumbotron {
+  background: url('../img/jumbo-bg.jpg');
+  background-size: cover;
+}
+
+.btn,
+.active {
+  transition: .4s;
+}
+
+.white {
+  color: rgba(255, 255, 255, .8);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.no-border {
+  border:none;
+}
+
+.media-object {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+.media-body h4 a, p a {
+  color: rgba(0, 0, 0, .6);
+}
