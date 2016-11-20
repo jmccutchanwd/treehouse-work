@@ -1,0 +1,14 @@
+/* UI element states pseudo-classes ------------ */
+
+input:focus,
+tetxarea:focus {
+  border-color: #52bab3;
+}
+
+:disabled {
+  background: #ddd;
+}
+
+input[type="checkbox"]:checked + label{ /* targets input type checkbox, once it's checked and its lable with the '+' */
+  font-weight: bold;
+}
