@@ -1,0 +1,16 @@
+body{
+	background-color: #000;
+	color: #fff;
+}
+.red{
+	background-color: rgba(243, 156, 18,1.0);
+}
+.blue{
+	background-color: rgba(52, 152, 219,1.0);
+}
+.green{
+	background-color: rgba(46, 204, 113,1.0);
+}
+h1{
+	padding-left: 0px;
+}
