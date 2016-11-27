@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- All you need is this one div!-->
+<div class="simple-ss" id="simple-ss"></div>
+
+
+<!-- Some junk -->
+<div class="content">
+  <p>This is a proof-of-concept for a slideshow that doesn't use any Javascript. It does not have pages or left/right buttons etc.
+  <ul>
+    <li>Pick a static width and height for the slides.</li>
+    <li>Place all your slides side-by-side in a <strong>single</strong> image.</li>
+    <li>Set the image as the background of the div. Use the background-position property to set the initial position of 0px. Be sure to calculate where the position needs to be for each slide, they will be negative numbers.</li>
+    <li>In the animation CSS, set the length of time for the entire slideshow to run. For my three images I used 13 seconds. If you have more images you will need to increase this as needed.</li>
+    <li>For the keyframes, you need to do some math. It's (pics * 2) / 100. Use this as the multipler for each slide, with "100%" being the last keyframe. Each image needs to have multiple keyframes in order for the slideshow to "pause" on that image. I used two stops for each slide, hence "pics * 2". Notice how the last keyframe at 100% is also the position of the first image of the slideshow. So technically, the first image gets 3 keyframes. I hope this makes sense.
+    <li>This project is using Codepen's built-in -prefix-free setting, otherwise you need all those prefixes too!</li>
+    <li>The Javascript is optional and is only there to enable clicking on each banner. If you want, you can remove all that and use a click event just on the div itself (one link for the entire slideshow). You will have to calculate the range of positions you want to be enabled for each banner click event. For example on the first banner, it is only clickable until it scrolls about half way to the 2nd banner, then the click fires on the second banner.</li>
+  </ul>
+  </p>
+
+<p>Images taken from random Lorempixel.com images.</p>
+</div>
+</body>
+</html>
