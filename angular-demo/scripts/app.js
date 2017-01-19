@@ -1,2 +1,7 @@
 console.log('Begin')
-var app = angular.module("todoListApp", []);
+var app = angular.module("todoListApp", [])
+.controller('mainCtrl', function($scope){
+  $scope.helloWorld = function() {
+    console.log('Hello world!');
+  };
+});
